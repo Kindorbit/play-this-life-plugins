@@ -1,0 +1,16 @@
+{
+  "name": "play-this-life",
+  "displayName": "Play This Life",
+  "version": "1.0.0",
+  "description": "Plan goals, habits, chores and routines, record progress and review your wins in Play This Life.",
+  "author": { "name": "Kindorbit Software", "url": "https://www.playthislife.com" },
+  "homepage": "https://www.playthislife.com",
+  "repository": "https://github.com/kindorbit/play-this-life-plugins",
+  "license": "UNLICENSED",
+  "keywords": ["tasks", "habits", "goals", "productivity"],
+  "icon": "./logo.png",
+  "documentationUrl": "https://www.playthislife.com/how-it-works",
+  "supportUrl": "https://www.playthislife.com/contact",
+  "privacyPolicyUrl": "https://www.playthislife.com/privacy",
+  "termsOfServiceUrl": "https://www.playthislife.com/terms"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "play-this-life-plugins",
+  "description": "Play This Life for Claude Code",
+  "owner": { "name": "Kindorbit Software", "url": "https://www.playthislife.com" },
+  "plugins": [
+    {
+      "name": "play-this-life",
+      "source": "./claude-code",
+      "description": "Plan goals, habits, chores and routines, record progress and review your wins in Play This Life."
+    }
+  ]
+}

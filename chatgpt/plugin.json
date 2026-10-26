@@ -1,0 +1,52 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "play-this-life",
+  "version": "1.0.0",
+  "description": "Plan goals, habits, chores and routines, record progress and review your wins in Play This Life.",
+  "author": { "name": "Kindorbit Software", "url": "https://www.playthislife.com" },
+  "homepage": "https://www.playthislife.com",
+  "keywords": ["tasks", "habits", "goals", "productivity"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Play This Life",
+        "shortDescription": "Plan goals, habits and chores",
+        "longDescription": "Play This Life keeps your goals, habits, chores, routines and workouts in one place and turns what you do into progress you can see. Connect it to plan your day in conversation: add goals and the steps under them, put habits and chores on a schedule, record what you finished, and ask what is due, what slipped and what you achieved this week. Everything you change appears in the Play This Life app and on your phone. Play This Life only reads and changes tasks in the account you connect.",
+        "developerName": "Kindorbit Software",
+        "category": "Productivity",
+        "capabilities": ["Plan goals and tasks", "Schedule habits and chores", "Record progress", "Review wins and history"],
+        "websiteURL": "https://www.playthislife.com",
+        "supportURL": "https://www.playthislife.com/contact",
+        "privacyPolicyURL": "https://www.playthislife.com/privacy",
+        "termsOfServiceURL": "https://www.playthislife.com/terms",
+        "defaultPrompt": [
+          "What's on my plate today?",
+          "Add a habit: stretch for 10 minutes every weekday morning.",
+          "What did I get done this week?"
+        ],
+        "logo": "./assets/logo.png"
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            { "description": "Today's plan", "prompt": "What do I have today?", "tools_triggered": "read_task_context, read_tasks", "expected_behavior": "Lists today's tasks with local times from the account timezone." },
+            { "description": "One-off task with a date", "prompt": "Add a task: renew my passport by November 15.", "tools_triggered": "read_task_context, create_tasks", "expected_behavior": "Creates one task with that deadline and confirms the title and date." },
+            { "description": "Repeating habit", "prompt": "Add a habit: stretch 10 minutes every weekday morning.", "tools_triggered": "read_task_context, preview_tasks, create_tasks", "expected_behavior": "Creates a weekday repeating task and shows its first dates." },
+            { "description": "Record progress", "prompt": "I finished my stretching today.", "tools_triggered": "find_tasks, record_task_progress", "expected_behavior": "Finds the habit, records today's completion and reports the saved record." },
+            { "description": "Weekly wins", "prompt": "What did I complete this week?", "tools_triggered": "read_wins", "expected_behavior": "Summarizes the week's completions and net XP." }
+          ],
+          "negative": [
+            { "description": "Money transfer", "prompt": "Transfer $50 from my account to Alex." },
+            { "description": "Mass permanent deletion", "prompt": "Delete all my tasks permanently." },
+            { "description": "Another person's data", "prompt": "Show me my partner's tasks." }
+          ]
+        },
+        "demo_recording_url": "https://www.playthislife.com/REPLACE-WITH-DEMO-RECORDING",
+        "commerce": false
+      },
+      "publication": {
+        "release_notes": "First release: plan goals, habits, chores and routines, record progress and review wins."
+      }
+    }
+  }
+}
