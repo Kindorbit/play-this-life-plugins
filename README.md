@@ -5,7 +5,7 @@ Distribution packages for the Play This Life assistant connector
 `docs/mcp-connector.md`.
 
 - `claude-code/`: Claude Code plugin. This repository is also a marketplace:
-  `/plugin marketplace add amanmamgain9/play-this-life-plugins`, then
+  `/plugin marketplace add Kindorbit/play-this-life-plugins`, then
   `/plugin install play-this-life@play-this-life-plugins`.
 - `chatgpt/`: ChatGPT plugin package (Agent Plugins format). Build the upload with
   `cd chatgpt && zip -r ../play-this-life-chatgpt.zip .` after replacing `demo_recording_url`.
