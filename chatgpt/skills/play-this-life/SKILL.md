@@ -15,6 +15,10 @@ Before changing an existing task, read its latest definition.updatedAt and pass 
 
 On validation failure, correct the documented input while preserving the user's requested result. Never drop a requested schedule, recurrence, deadline or target to make a write pass. If it cannot be represented, stop and explain what failed. After an uncertain write or lost response, read to establish whether it saved before retrying; each write call is a new operation and can duplicate work. Report successful, failed and pending changes separately.
 
+For dated calendar reads, pass from/to together (exclusive to, at most 93 days) without scope, taskTypes or viewTypes. Optional taskIds selects saved tasks within that range. Collection reads are a separate input mode: scope: current requires taskTypes or viewTypes; scope: projects selects the project collection. Neither collection mode accepts from/to, taskIds or includeArchived. Never combine those modes. completionHistory is explicitly paged; use saved task IDs and follow each history cursor.
+
+Today read example (illustrative dates; replace both from trusted local context): {"from":"2026-10-27","to":"2026-10-28"}
+
 ## Task purpose and hierarchy
 
 taskType describes purpose, independently of recurrence: task = specific work; chore = upkeep; habit = a behavior to establish; routine = steps performed together; event = a dated occurrence; goal = a desired outcome; project = a finite effort; list = ongoing organization. Goals cannot repeat. Repeating a task does not by itself make it a habit. A duration in the title does not automatically create a measured target.
