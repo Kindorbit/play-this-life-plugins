@@ -2,7 +2,7 @@
 
 Distribution packages for the Play This Life assistant connector
 (`https://www.playthislife.com/api/mcp`). The server itself lives in the app repository; see its
-`docs/mcp-connector.md`.
+`dev/mcp.md`.
 
 - `claude-code/`: Claude Code plugin. This repository is also a marketplace:
   `/plugin marketplace add Kindorbit/play-this-life-plugins`, then

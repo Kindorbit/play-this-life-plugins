@@ -31,7 +31,7 @@
           "positive": [
             { "description": "Today's plan", "prompt": "What do I have today?", "tools_triggered": "read_task_context, read_tasks", "expected_behavior": "Lists today's tasks with local times from the account timezone." },
             { "description": "One-off task with a date", "prompt": "Add a task: renew my passport by November 15.", "tools_triggered": "read_task_context, create_tasks", "expected_behavior": "Creates one task with that deadline and confirms the title and date." },
-            { "description": "Repeating habit", "prompt": "Add a habit: stretch 10 minutes every weekday morning.", "tools_triggered": "read_task_context, preview_tasks, create_tasks", "expected_behavior": "Creates a weekday repeating task and shows its first dates." },
+            { "description": "Repeating habit", "prompt": "Add a habit: stretch 10 minutes every weekday morning.", "tools_triggered": "read_task_context, create_tasks", "expected_behavior": "Creates a weekday repeating task and confirms its weekdays and start date." },
             { "description": "Record progress", "prompt": "I finished my stretching today.", "tools_triggered": "find_tasks, record_task_progress", "expected_behavior": "Finds the habit, records today's completion and reports the saved record." },
             { "description": "Weekly wins", "prompt": "What did I complete this week?", "tools_triggered": "read_wins", "expected_behavior": "Summarizes the week's completions and net XP." }
           ],
