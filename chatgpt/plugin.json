@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "play-this-life",
   "version": "1.0.0",
-  "description": "Plan goals, habits, chores and routines, record progress and review your wins in Play This Life.",
+  "description": "Your whole life in one planner: projects, tasks, habits, routines, workouts and chores. Record progress and review your wins in Play This Life.",
   "author": { "name": "Kindorbit Software", "url": "https://www.playthislife.com" },
   "homepage": "https://www.playthislife.com",
   "keywords": ["tasks", "habits", "goals", "productivity"],
@@ -10,8 +10,8 @@
     "com.openai": {
       "interface": {
         "displayName": "Play This Life",
-        "shortDescription": "Plan goals, habits and chores",
-        "longDescription": "Play This Life keeps your goals, habits, chores, routines and workouts in one place and turns what you do into progress you can see. Connect it to plan your day in conversation: add goals and the steps under them, put habits and chores on a schedule, record what you finished, and ask what is due, what slipped and what you achieved this week. Everything you change appears in the Play This Life app and on your phone. Play This Life only reads and changes tasks in the account you connect.",
+        "shortDescription": "Your whole life in one planner",
+        "longDescription": "Play This Life is your whole life in one planner: projects, tasks, habits, routines, workouts and chores in one place, with what you do turned into progress you can see. Connect it to plan your day in conversation: add goals and the steps under them, put habits and chores on a schedule, record what you finished, and ask what is due, what slipped and what you achieved this week. Everything you change appears in the Play This Life app and on your phone. Play This Life only reads and changes tasks in the account you connect.",
         "developerName": "Kindorbit Software",
         "category": "Productivity",
         "capabilities": ["Plan goals and tasks", "Schedule habits and chores", "Record progress", "Review wins and history"],

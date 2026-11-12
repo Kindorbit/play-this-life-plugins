@@ -1,5 +1,9 @@
 # Play This Life plugins
 
+Play This Life is an all-in-one life planner for one person: projects, tasks, habits, routines,
+workouts and chores in one app. Ginger, its AI assistant, sets things up from a plain message.
+These packages let Claude and ChatGPT read and change the same plan.
+
 Distribution packages for the Play This Life assistant connector
 (`https://www.playthislife.com/api/mcp`). The server itself lives in the app repository; see its
 `dev/mcp.md`.
